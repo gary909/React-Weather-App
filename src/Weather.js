@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { CiSearch } from "react-icons/ci"; // magnify glass icon
 import { FaLocationDot } from "react-icons/fa6"; // location icon
-import { getName } from "country-list"; // country name
+//import { getName } from "country-list"; // country name
 import "./Weather.css"; // Create a CSS file for styling
 
 const Weather = () => {
@@ -38,8 +38,8 @@ const Weather = () => {
       <header className="weather-header">
         <div className="weather-header">
           <p>
-            <FaLocationDot className="location-icon" />{" "}
-            <strong>{weather.name}</strong>, {weather.sys.country}
+            {/* <FaLocationDot className="location-icon" />{" "} */}
+            {/* {weather.name}, {weather.sys.country} */}
           </p>
         </div>
         <form onSubmit={getWeather}>
